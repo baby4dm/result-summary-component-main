@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js" type="module" defer></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Results summary component</title>
+  </head>
+  <body class="flex justify-center w-full h-screen">
+    <div class="flex flex-col items-center text-center">
+      <div
+        class="flex flex-col items-center gap-6 bg-gradient-to-b from-[#7755FF] to-[#2F2CE9] rounded-b-[8px] min-w-[300px] w-full py-8 px-14"
+      >
+        <p class="text-[#CAC9FF]">Your Result</p>
+        <div
+          class="flex flex-col items-center justify-center bg-gradient-to-b from-[#4D21C9] to-transparent rounded-full w-36 h-36"
+        >
+          <span id="score" class="text-white"></span> of 100
+        </div>
+      </div>
+    </div>
+    <!-- Your Result 76 of 100 Great You scored higher than 65% of the people who
+    have taken these tests. Summary Reaction 80 / 100 Memory 92 / 100 Verbal 61
+    / 100 Visual 72 / 100 Continue -->
+  </body>
+</html>
