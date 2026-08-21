@@ -24,62 +24,52 @@
     </style>
     <title>Results summary component</title>
   </head>
-  <body class="flex justify-center w-full h-screen">
-    <div class="flex flex-col items-center text-center w-full gap-6">
+  <body
+    class="flex justify-center w-full h-screen bg-[#ECF2FF] md:px-[41px] md:items-center"
+  >
+    <div
+      class="flex flex-col w-full max-w-[736px] gap-6 bg-white md:rounded-[32px] md:flex-row md:shadow-[0_30px_60px_rgba(61,108,236,0.15)] md:max-h-[512px] md:gap-0"
+    >
       <div
-        class="flex flex-col items-center gap-6 bg-gradient-to-b from-[#7755FF] to-[#2F2CE9] rounded-b-[32px] w-full py-8 px-14"
+        class="flex flex-col justify-between items-center text-center gap-6 bg-gradient-to-b from-[#7755FF] to-[#2F2CE9] rounded-b-[32px] w-full py-8 px-14 md:rounded-[32px] md:w-1/2 md:max-w-[338px] lg:max-w-[368px]"
       >
-        <p class="text-[#CAC9FF] font-bold text-[18px] leading-[130%]">
+        <p
+          class="text-[#CAC9FF] font-bold text-[18px] leading-[130%] md:text-2xl"
+        >
           Your Result
         </p>
         <div
-          class="flex flex-col items-center justify-center bg-gradient-to-b from-[#4D21C9] to-transparent rounded-full w-36 h-36"
+          class="flex flex-col items-center justify-center bg-gradient-to-b from-[#4D21C9] to-transparent rounded-full w-36 h-36 md:w-[200px] md:h-[200px]"
         >
-          <p id="score" class="text-white text-[56px] font-extrabold"></p>
-          <p class="text-sm text-[#CAC9FF] font-bold">of 100</p>
+          <p
+            id="score"
+            class="text-white text-[56px] font-extrabold md:text-[72px]"
+          ></p>
+          <p class="text-sm text-[#CAC9FF] font-bold md:text-lg">of 100</p>
         </div>
         <div>
-          <h1 class="text-white text-2xl font-bold leading-[130%]">Great</h1>
-          <p class="text-[#CAC9FF] leading-[130%]">
+          <h1
+            class="text-white text-2xl font-bold leading-[130%] md:text-[32px]"
+          >
+            Great
+          </h1>
+          <p class="text-[#CAC9FF] leading-[130%] md:text-lg">
             You scored higher than 65% of the people who have taken these tests.
           </p>
         </div>
       </div>
-      <div class="w-full px-[15px] flex flex-col items-center gap-6">
+      <div
+        class="w-full px-[15px] flex flex-col items-center gap-6 md:w-1/2 md:p-11"
+      >
         <h2 class="self-start text-lg font-bold text-[#303B59] leading-[130%]">
           Summary
         </h2>
-        <ul class="flex flex-col gap-4 w-full">
-          <li class="h-14 bg-[#FFF6F6] flex justify-between p-4 rounded-xl">
-            <div class="flex gap-4">
-              <img src="./assets/images/icon-reaction.svg" alt="Reaction" />
-              <h3 class="text-[#FF5555] font-medium leading-[130%]">
-                Reaction
-              </h3>
-            </div>
-
-            <p class="text-[#303B59] font-bold leading-[130%]">
-              <span id="reaction" class="opacity-100">90</span>
-              <span class="opacity-50">/ 100</span>
-            </p>
-          </li>
-          <li>
-            <img src="./assets/images/icon-memory.svg" alt="Memory" />
-            <h3>Memory</h3>
-            <p><span id="memory"></span> / 100</p>
-          </li>
-          <li>
-            <img src="./assets/images/icon-verbal.svg" alt="Verbal" />
-            <h3>Verbal</h3>
-            <p><span id="verbal"></span> / 100</p>
-          </li>
-          <li>
-            <img src="./assets/images/icon-visual.svg" alt="Visual" />
-            <h3>Visual</h3>
-            <p><span id="visual"></span> / 100</p>
-          </li>
-        </ul>
-        <button>Continue</button>
+        <ul id="summary-list" class="flex flex-col gap-4 w-full"></ul>
+        <button
+          class="bg-[#303B59] text-white text-lg font-bold rounded-[128px] h-14 w-full hover: bg-gradient-to-b hover:from-[#7755FF] hover:to-[#2F2CE9]"
+        >
+          Continue
+        </button>
       </div>
     </div>
   </body>
